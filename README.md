@@ -4,10 +4,10 @@ Extends the vanilla production chains to allow production of all available goods
 
 It comes in two versions:
 
-1 extraminesM:
+1. extraminesM:
 Adds a Diamond Mine and a Plant -> Bio Gas Fermenter.
 
-2 extraminesS:
+2. extraminesS:
 Adds a Coal + Energy -> Diamond Factory and a Plant -> Bio Gas Fermenter.
 
 

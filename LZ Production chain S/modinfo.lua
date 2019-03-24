@@ -4,7 +4,7 @@ meta =
     -- ID of your mod; Make sure this is unique!
     -- Will be used for identifying the mod in dependency lists
     -- Will be changed to workshop ID (ensuring uniqueness) when you upload the mod to the workshop
-    id = "LZproductionchainS",
+    id = "1692693432",
 
     -- Name of your mod; You may want this to be unique, but it's not absolutely necessary.
     -- This is an additional helper attribute for you to easily identify your mod in the Mods() list
@@ -14,7 +14,7 @@ meta =
     title = "Laserzwei's Productionchain S",
 
     -- Description of your mod that will be displayed to players
-    description = "This mod adds a Fermenter and a Diamond Factory.",
+    description = "This mod adds:\n    Bio Gas Fermenter: Plant(x40) -> Bio Gas(x4) + Water(x10) + Toxic Waste(x1))\n    Diamond Factory Energy(x2) + Coal(x2) -> Diamond(x2)",
 
     -- Insert all authors into this list
     authors = {"Laserzwei"},
@@ -39,11 +39,18 @@ meta =
     --      {id = "OptionalMod", min = "0.2", optional = true}, -- we support OptionalMod optionally, starting at version 0.2
     -- },
     dependencies = {
-        {id = "Avorion", min = "0.21.2"}
+        {id = "Avorion", min = "0.22", max = "0.22"}
     },
 
     -- Set to true if the mod only has to run on the server. Clients will get notified that the mod is running on the server, but they won't download it to themselves
     serverSideOnly = false,
+
+    -- Set to true if the mod only has to run on the client, such as UI mods
+    clientSideOnly = false,
+
+    -- Set to true if the mod changes the savegame in a potentially breaking way, as in it adds scripts or mechanics that get saved into database and no longer work once the mod gets disabled
+    -- logically, if a mod is client-side only, it can't alter savegames, but Avorion doesn't check for that at the moment
+    saveGameAltering = false,
 
     -- Contact info for other users to reach you in case they have questions
     contact = "lasernr2@gmail.com",
